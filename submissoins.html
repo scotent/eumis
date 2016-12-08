@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scottish Enterprise</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row">
+        <div class="col-sm-6">
+            <table class="table table-striped">
+                <thead> <tr> <th>#</th> <th>Eu Funding Compiant</th> <th>SME</th> <th>£ Sum</th> <th>Submit</th> </tr> </thead> 
+                <tbody> 
+                    <tr> 
+                      <th scope="row">1</th> 
+                      <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> 
+                      <td>SME</td> 
+                      <td><input type="number"/></td> 
+                      <td><input type="checkbox" checked /></td>
+                    </tr>
+                    <tr> 
+                      <th scope="row">2</th>
+                      <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> 
+                      <td>SME</td> 
+                      <td><input type="number"/></td>
+                      <td><input type="checkbox" checked /></td>
+                    </tr>
+                    <tr> 
+                      <th scope="row">3</th> 
+                      <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> 
+                      <td class="warning">Not SME</td>
+                      <td><input type="number"/></td> 
+                      <td><input type="checkbox" checked /></td>
+                    </tr>
+                </tbody> </table>
+    </div>
+    <div class="col-sm-6">
+        <a href="response.html" class="btn btn-success" onclick="return confirm('This will submit this data to EUMIS.  Are you sure?')">Submit</a>
+    </div>
+    </div>
+   
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascripts/bootstrap.min.js"></script>
+</body>
+</html>
