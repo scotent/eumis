@@ -22,36 +22,66 @@
 <div class="container-fluid">
     <h1>Select Projects to submit to EUMIS</h1>
 <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
             <table class="table table-striped">
-                <thead> <tr> <th>#</th> <th>Eu Funding Compliant</th> <th>SME</th> <th>£ Sum</th> <th>Submit</th> </tr> </thead> 
+                <thead>
+                    <tr> 
+                    <th>#</th>
+                    <th>Company</th> 
+                    <th>EU Eligable product</th> 
+                    <th>SME</th> 
+                    <th>Service Completed</th> 
+                    <th>Product Code</th> 
+                    <th>SPO</th> 
+                    <th>£ Sum</th>
+                    <th>Submit</th>
+                  </tr> 
+                </thead> 
                 <tbody> 
                     <tr> 
                       <th scope="row">1</th> 
+                      <td>Company One</td> 
                       <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> 
                       <td>SME</td> 
+                         <td>01/01/2017</td> 
+                         <td>11111</td> 
+                         <td>55555</td> 
                       <td>£<input type="number" value="1200"/></td> 
                       <td><input type="checkbox" checked /></td>
                     </tr>
                     <tr> 
                       <th scope="row">2</th>
+                      <td>Company Two</td> 
                       <td class="danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td> 
                       <td>SME</td> 
+                         <td>01/01/2017</td> 
+                         <td>11111</td> 
+                         <td>55555</td> 
                       <td>£<input type="number" value="10500"/></td>
                       <td><input type="checkbox"  /></td>
                     </tr>
                     <tr> 
                       <th scope="row">3</th> 
+                      <td>Company Three</td> 
                       <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td> 
                       <td class="danger">Not SME</td>
+                         <td>01/01/2017</td> 
+                         <td>11111</td> 
+                         <td>55555</td> 
                       <td>£<input type="number" value="100100"/></td> 
                       <td><input type="checkbox"  /></td>
                     </tr>
-                </tbody> </table>
+                </tbody> 
+            </table>
+             <div class="form-group">
+                <label for="exampleInputFile">Sun Accounts File</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Upload the sun accounts csv export to match company data.</p>
+              </div>
               <a href="#" class="btn btn-info"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download to Excel</a>
   
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-2">
         <a href="response.html" class="btn btn-success" onclick="return confirm('This will submit this data to EUMIS.  Are you sure?')">Submit</a>
     </div>
     </div>
