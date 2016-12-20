@@ -25,13 +25,13 @@
             <form>
   
   <div class="form-group">
-    <label for="projectType">Product Code(s)</label>
+    <label for="projectType">Product Code(s) (hold Ctrl to select multiple)</label>
    <select multiple class="form-control" id="projectType">
-  <option>2495</option>
-  <option>574</option>
-  <option>482</option>
-  <option>2113</option>
-  <option>...</option>
+  <option>Project Name (2495)</option>
+  <option>Project Name (574)</option>
+  <option>Project Name (482)</option>
+  <option>Project Name (2113)</option>
+  <option>Project Name (...)</option>
 </select>
   </div>
   <div class="checkbox">
@@ -39,7 +39,12 @@
       <input type="checkbox"> Include Non-SMEs at time of appraisal
     </label>
   </div>
-                <p>Or</p>
+   <div class="form-group">
+    <label for="dateFrom">Date Range:</label>
+       <input type="date" class="form-control" id="dateFrom" placeholder=""> <span>to</span>
+    <input type="date" class="form-control" id="dateTo" placeholder="">
+  </div>
+  <p>Or</p>
     <div class="form-group">
     <label for="exampleInputEmail1">Service Number</label>
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
