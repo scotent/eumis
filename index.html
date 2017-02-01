@@ -22,7 +22,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="col-sm-6">
-            <a class="navbar-brand" href="#">EUMIS Submissions</a>
+            <img src="images/logo.jpg" id="se-logo">
         </div>
         <div class="col-sm-6">
             <a class="navbar-brand" href="#">EUMIS Submissions</a>
@@ -39,13 +39,15 @@
 
   </nav>
 
-<div class="container" style="padding-top:2em">
+<!--<div id="background-strip"></div>-->
+<div class="container" style="padding-top:2em;">
 
 <div class="row">
         <div class="col-sm-6">
-            <h2>Your Submissions</h2>
-            <a href="new.html" class="btn btn-success">New Submission</a>
-
+            <h2>EUMIS Submission management</h2>
+            <h2><small>Submit financial data about your projects online</small></h2>
+                <a href="new.html" class="btn btn-success button-spacer">New Submission</a>
+            <h3>Your submissions</h3>
             <table class="table table-striped">
                 <thead> <tr> <th>#</th> <th>Created Date</th> <th>Status</th> <th>Action</th> </tr> </thead>
                 <tbody>
@@ -53,11 +55,31 @@
                     <tr> <th scope="row">2</th> <td>02 Dec 2016</td> <td>New</td> <td><a href="submissoins.html">view</a> | <a href="#">clone</a></td> </tr>
                     <tr> <th scope="row">3</th> <td>03 Dec 2016</td> <td>New</td> <td><a href="submissoins.html">view</a> | <a href="#">clone</a></td> </tr>
                 </tbody> </table>
-    </div>
+        </div>
     <div class="col-sm-6">
 
     </div>
+</div>
+
+<div class="row">
+    <div class="discussion-points">
+    <span class="halflings halflings-info-sign"></span><strong>Discussion points for this demo</strong>
+    <ol>
+      <li>We can make the look and feel more 'solid' - we could add a navigation sub-bar, or wrap the main content in colour.</li>
+      <li>Can we offer more details in the table? such as: show two or three of the project names from the submission. This will help users remember which is which.
+
+    <table class="table table-striped">
+        <thead> <tr> <th>#</th> <th>Created Date</th> <th>Projects</th> <th>Status</th> <th>Action</th> </tr> </thead>
+        <tbody>
+            <tr> <th scope="row">1</th> <td>01 Dec 2016</td> <td>Exports, Inward investment ...</td> <td>Submitted</td> <td><a href="view.html">view</a> | <a href="#">clone</a></td> </tr>
+            <tr> <th scope="row">2</th> <td>02 Dec 2016</td> <td>Contracts, Inward investment ...</td> <td>New</td> <td><a href="submissoins.html">view</a> | <a href="#">clone</a></td> </tr>
+            <tr> <th scope="row">3</th> <td>03 Dec 2016</td> <td>Exports, Contracts ...</td> <td>New</td> <td><a href="submissoins.html">view</a> | <a href="#">clone</a></td> </tr>
+        </tbody> </table>
+    </li>
+    <li>The history needs to appear in reverse-date order.</li>
+</ol>
     </div>
+</div>
 
 </div>
 
